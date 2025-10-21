@@ -1,0 +1,98 @@
+/* Contenedor */
+.usuario-list-container {
+    padding: 1.25rem;
+    background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+    border-radius: 8px;
+}
+
+/* Heading */
+.usuario-list-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Tabla */
+.usuario-table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 0.75rem;
+}
+
+.usuario-table thead th {
+    border-bottom: none;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+}
+
+.usuario-table tbody tr:hover {
+    background: rgba(0, 118, 255, 0.03);
+    transform: translateY(-1px);
+}
+
+/* Acciones */
+.acciones-cell {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.acciones-cell .btn {
+    min-width: 86px;
+}
+
+/* Form errors */
+.form-error {
+    color: #b02a37;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(17, 24, 39, 0.08);
+}
+
+.modal-title i {
+    color: #0ea5e9;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    box-shadow: 0 6px 18px rgba(0, 114, 255, 0.12);
+}
+
+.btn-warning {
+    background: linear-gradient(90deg, #f59e0b, #f97316);
+    border: none;
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+    border: none;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(2, 6, 23, 0.04);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .acciones-cell .btn {
+        min-width: 72px;
+        font-size: 0.85rem;
+    }
+
+    .usuario-list-container {
+        padding: 0.75rem;
+    }
+
+    .usuario-table thead th {
+        font-size: 0.85rem;
+    }
+}

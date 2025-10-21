@@ -1,0 +1,225 @@
+/* Contenedor */
+.reserva-list-container {
+    padding: 1.25rem;
+    background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+    border-radius: 8px;
+}
+
+/* Heading */
+.reserva-list-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Tabla */
+.reserva-table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 0.75rem;
+}
+
+.reserva-table thead th {
+    border-bottom: none;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    background: #212529 !important;
+    color: white !important;
+}
+
+.reserva-table tbody tr:hover {
+    background: rgba(0, 118, 255, 0.03);
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+/* Acciones */
+.acciones-cell {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.acciones-cell .btn {
+    min-width: 86px;
+}
+
+/* Form errors */
+.form-error {
+    color: #b02a37;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(17, 24, 39, 0.08);
+}
+
+.modal-title i {
+    color: #0ea5e9;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    box-shadow: 0 6px 18px rgba(0, 114, 255, 0.12);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(0, 114, 255, 0.2);
+}
+
+.btn-warning {
+    background: linear-gradient(90deg, #f59e0b, #f97316);
+    border: none;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(90deg, #f97316, #f59e0b);
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #dc2626, #ef4444);
+    transform: translateY(-1px);
+}
+
+/* Outline buttons for card view */
+.btn-outline-warning {
+    color: #f59e0b;
+    border-color: #f59e0b;
+}
+
+.btn-outline-warning:hover {
+    background: linear-gradient(90deg, #f59e0b, #f97316);
+    border-color: transparent;
+    color: white;
+}
+
+.btn-outline-danger {
+    color: #ef4444;
+    border-color: #ef4444;
+}
+
+.btn-outline-danger:hover {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+    border-color: transparent;
+    color: white;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(2, 6, 23, 0.04);
+    border: none;
+}
+
+/* Cards for calendar view */
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    border-radius: 8px 8px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Badges */
+.badge {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Schedule items in calendar view */
+.border-bottom {
+    border-color: #e5e7eb !important;
+}
+
+/* Text colors */
+.text-success {
+    color: #10b981 !important;
+}
+
+.text-danger {
+    color: #ef4444 !important;
+}
+
+.text-primary {
+    color: #3b82f6 !important;
+}
+
+.text-muted {
+    color: #6b7280 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .acciones-cell .btn {
+        min-width: 72px;
+        font-size: 0.85rem;
+    }
+
+    .reserva-list-container {
+        padding: 0.75rem;
+    }
+
+    .reserva-table thead th {
+        font-size: 0.85rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Tabs customization */
+.nav-tabs .nav-link {
+    color: #6c757d;
+    font-weight: 500;
+    border: none;
+    padding: 12px 20px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff;
+    background: none;
+    border-bottom: 3px solid #007bff;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #0056b3;
+    border: none;
+}
+
+/* Tab "Vista Tabla" siempre negro */
+.nav-tabs .nav-link.active[aria-selected="true"] {
+    color: #000 !important;
+}
+
+.nav-tabs .nav-link[role="tab"]:nth-child(1) {
+    color: #000 !important;
+}
+
+.nav-tabs .nav-link[role="tab"]:nth-child(1).active {
+    color: #000 !important;
+}
