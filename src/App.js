@@ -13,23 +13,24 @@ import ReservaList from './pages/ReservaList';
 import Ia from './pages/ia';
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <div className="container mt-4">
-          <Routes>
-            <Route path="/" element={<Navigate to="/usuarios" replace />} />
-            <Route path="/usuarios" element={<UsuarioList />} />
-            <Route path="/horarios" element={<HorarioList />} />
-            <Route path="/clases" element={<ClaseList />} />
-            <Route path="/reservas" element={<ReservaList />} />
-            <Route path="/ia" element={<Ia />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Navbar />
+                <div className="container mt-4">
+                    <Routes>
+                        <Route path="*" element={<NotFound />} />
+                        <Route path="/" element={<Navigate to="/usuarios" replace />} />
+                        <Route path="/usuarios" element={<UsuarioList />} />
+                        <Route path="/horarios" element={<HorarioList />} />
+                        <Route path="/clases" element={<ClaseList />} />
+                        <Route path="/reservas" element={<ReservaList />} />
+                        <Route path="/ia" element={<Ia />} />
+                    </Routes>
+                </div>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
