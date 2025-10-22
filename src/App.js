@@ -11,6 +11,7 @@ import HorarioList from './pages/HorarioList';
 import ClaseList from './pages/ClaseList';
 import ReservaList from './pages/ReservaList';
 import Ia from './pages/ia';
+import NotFound from './components/NotFound';
 
 function App() {
     return (
